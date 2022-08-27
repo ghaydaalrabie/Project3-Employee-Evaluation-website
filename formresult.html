@@ -1,0 +1,116 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link data-require="sweet-alert@*" data-semver="0.4.2" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" />
+
+</head>
+<body>
+  <section class="results-header">
+    <div class="results-img">
+      <img
+        src="https://images.pexels.com/photos/3779427/pexels-photo-3779427.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="" class="cover">
+         <div class="results-content">
+        <h1>Welcome <span id="welcoming-name-form">Name</span></h1>
+      </div>
+           </div>
+      <nav>
+        <a href="landingpage.html"><img src="imgs/logo.png" class="logo"></a>
+        <ul>
+          <li><a href="" class="logOut-btn">Log In</a></li>
+        </ul>
+      </nav>
+     
+ 
+  </section>
+    <section class="drop-down">
+        <div class="select-box">
+              <select class="selected" onchange="showEvaluationResult()">
+                     <div class="options-container">
+                        <option value="">Choose employee</option>
+                        <option value="Luca Changretta">Luca Changretta</option>
+    <option value="John wick">John wick</option>
+    <option value="Don corleone michael">Don corleone michael</option>
+    <option value="Hannibal lecter">Hannibal lecter</option>
+    <option value="Don Corleone">Don Corleone</option>
+    </div>
+  </select>
+
+    </section>
+    <section class="evaluarion-results">
+        <div class="personality" id="personality">
+            
+            <h1>Personality Evaluation Results</h1>
+            <li class="Question1"><h3>Sets goals and objectives for the department</h3>
+                <span class="bar"><span class="goals"></span></span>
+            </li>
+
+  
+            <li class="Question2"><h3>Motivates employees and co-workers into performing duties needed to be accomplished</h3>
+                <span class="bar"><span class="motivation"></span></span>
+            </li>
+
+            <li class="Question3"><h3> Develops and maintains a positive relationship within the College environment</h3>
+                <span class="bar"><span class="developing"></span></span>
+            </li>
+
+            <h1>Technical Evaluation Results</h1>
+            <li class="Question4"><h3>Achieves the desired results, purpose or work-related goals</h3>
+                <span class="bar"><span class="achievable"></span></span>
+            </li>
+
+            <li class="Question5"><h3>Initiates and provides suggestions for job enrichment and expanded duties</h3>
+                <span class="bar"><span class="suggestions"></span></span>
+            </li>
+
+            <li class="Question6"><h3> Sets personal and professional goals</h3>
+                <span class="bar"><span class="personal"></span></span>
+            </li>
+
+            <h1>Proffessional Evaluation Results</h1>
+            <li class="Question7"><h3>maintains a great attendance behavior</h3>
+                <span class="bar"><span class="behavior"></span></span>
+            </li>
+
+            <li class="Question8"><h3>able to multi-task  </h3>
+                <span class="bar"><span class="tasks"></span></span>
+            </li>
+
+            <li class="Question9"><h3> Develops and maintains a positive relationship within the College environment</h3>
+                <span class="bar"><span class="dev"></span></span>
+            </li>
+           
+            <div class="curved-text-box">
+
+                <!-- <img src="images/black2.png" alt="" class="curvedcover"> -->
+                    <h2>Here are some recommindations to improve your employee's skills</h2>
+                    <p class="recommindations" id="recommindations"></p> 
+                    <p class="recommindations2" id="recommindations2"></p> 
+                    <p class="recommindations3" id="recommindations3"></p> 
+                    <p class="recommindations4" id="recommindations4"></p> 
+                    <p class="recommindations5" id="recommindations5"></p> 
+                    <p class="recommindations6" id="recommindations6"></p> 
+                    <p class="recommindations7" id="recommindations7"></p> 
+                    <p class="recommindations8" id="recommindations8"></p> 
+                    <p class="recommindations9" id="recommindations9"></p> 
+
+                  
+            </div>
+            <div class="white-space">
+                
+            </div>
+        
+        </div>
+    </section>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+     <script src="java.js"></script>
+</body>
+</html>
