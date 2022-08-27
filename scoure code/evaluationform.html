@@ -1,0 +1,268 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link data-require="sweet-alert@*" data-semver="0.4.2" rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" />
+
+</head>
+
+<body>
+  <section class="results-header">
+    <div class="results-img">
+      <img
+        src="https://images.pexels.com/photos/3779427/pexels-photo-3779427.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="" class="cover">
+         <div class="results-content">
+        <h1>Welcome <span id="welcoming-name-form">Name</span></h1>
+      </div>
+           </div>
+      <nav>
+        <a href="landingpage.html"><img src="imgs/logo.png" class="logo"></a>
+        <ul>
+          <li><a href="" class="logOut-btn">Log In</a></li>
+        </ul>
+      </nav>
+     
+ 
+  </section>
+  <section class="drop-down">
+    <div class="select-box">
+
+      <select class="selected" onchange="showEvaluationForm()">
+        <div class="options-container">
+          <option value="">Choose employee</option>
+          <option value="Luca Changretta">Luca Changretta</option>
+          <option value="John wick">John wick</option>
+          <option value="Don corleone michael">Don corleone michael</option>
+          <option value="Hannibal lecter">Hannibal lecter</option>
+          <option value="Don Corleone">Don Corleone</option>
+        </div>
+      </select>
+
+    </div>
+    </div>
+
+
+  </section>
+  <section class="form">
+    <div class="form-container">
+      <form onsubmit="submitEvaluationForm()">
+        <div class="rating-Container">
+          <div class="personalRating">
+            <h2>Personal Rating :</h2>
+          </div>
+          <div class="questionOne">
+            <p>1- Sets goals and objectives for the department:</p>
+          </div>
+          <div class="label-Q1-poor">
+            <label for="Q1-Radio">Poor</label>
+          </div>
+          <div class="questionOne-radio-poor">
+              <input type="radio" id="poor" name="Q1-Radio" value="poor" required />
+          </div>
+          <div class="label-Q1-good">
+            <label for="Q1-Radio">Good</label>
+          </div>
+          <div class="questionOne-radio-good">
+              <input type="radio" id="Good" name="Q1-Radio" value="good" required />
+          </div>
+          <div class="label-Q1-execllent">
+            <label for="Q1-Radio">Execllent</label>
+          </div>
+          <div class="questionOne-radio-execllent">
+             
+            <input type="radio" id="execllent" name="Q1-Radio" value="execllent" required />
+          </div>
+          <div class="questionTwo">
+            <p>
+              2-Motivates employees and co-workers into performing duties needed
+              to be accomplished:
+            </p>
+          </div>
+
+          <div class="questionTwo-radio-poor">
+              <input type="radio" id="poor" name="Q2-Radio" value="poor" required />
+          </div>
+          <div class="questionTwo-radio-good">
+              <input type="radio" id="good" name="Q2-Radio" value="good" required />
+          </div>
+          <div class="questionTwo-radio-execllent">
+             
+            <input type="radio" id="execllent" name="Q2-Radio" value="execllent" required />
+          </div>
+
+          <!-- -----------------------------------Question-3------------------------------------------------------- -->
+
+          <div class="questionThree">
+            <p>
+              3-Develops and maintains a positive relationship within the
+              College environment technical:
+            </p>
+          </div>
+          <div class="questionThree-radio-poor">
+              <input type="radio" id="poor" name="Q3-Radio" value="poor" required />
+          </div>
+          <div class="questionThree-radio-good">
+              <input type="radio" id="good" name="Q3-Radio" value="good" required />
+          </div>
+          <div class="questionThree-radio-execllent">
+             
+            <input type="radio" id="execllent" name="Q3-Radio" value="execllent" required />
+          </div>
+
+          <!-- -----------------------------------professionalRating------------------------------------------------------- -->
+          <div class="professionalRating">
+            <h2>Professional Rating :</h2>
+          </div>
+          <div class="label-p2-poor">
+            <label for="p2-Radio">Poor</label>
+          </div>
+
+          <div class="label-p2-good">
+            <label for="p2-Radio">Good</label>
+          </div>
+
+          <div class="label-p2-execllent">
+            <label for="p2-Radio">Execllent</label>
+          </div>
+
+          <!-- -----------------------------------Question-4------------------------------------------------------- -->
+          <div class="questionFour">
+            <p>4-Achieves the desired results, purpose or work-related goals</p>
+          </div>
+          <div class="questionFour-radio-poor">
+              <input type="radio" id="poor" name="Q4-Radio" value="poor" required />
+          </div>
+          <div class="questionFour-radio-good">
+              <input type="radio" id="good" name="Q4-Radio" value="good" required />
+          </div>
+          <div class="questionFour-radio-execllent">
+             
+            <input type="radio" id="execllent" name="Q4-Radio" value="execllent" required />
+          </div>
+          <!-- -----------------------------------Question-5------------------------------------------------------- -->
+          <div class="questionFive">
+            <p>
+              5-Initiates and provides suggestions for job enrichment and
+              expanded duties
+            </p>
+          </div>
+          <div class="questionFive-radio-poor">
+              <input type="radio" id="poor" name="Q5-Radio" value="poor" required />
+          </div>
+          <div class="questionFive-radio-good">
+              <input type="radio" id="good" name="Q5-Radio" value="good" required />
+          </div>
+          <div class="questionFive-radio-execllent">
+             
+            <input type="radio" id="execllent" name="Q5-Radio" value="execllent" required />
+          </div>
+          <!-- -----------------------------------Question-6------------------------------------------------------- -->
+          <div class="questionSix">
+            <p>6-Sets personal and professional goals:</p>
+          </div>
+          <div class="questionSix-radio-poor">
+              <input type="radio" id="poor" name="Q6-Radio" value="poor" required />
+          </div>
+          <div class="questionSix-radio-good">
+              <input type="radio" id="good" name="Q6-Radio" value="good" required />
+          </div>
+          <div class="questionSix-radio-execllent">
+             
+            <input type="radio" id="execllent" name="Q6-Radio" value="execllent" required />
+          </div>
+          <!-- -----------------------------------Part 3------------------------------------------------------- -->
+          <div class="technicalRating">
+            <h2>Technial Rating:</h2>
+          </div>
+          <div class="label-p3-poor">
+            <label for="p3-Radio">Poor</label>
+          </div>
+
+          <div class="label-p3-good">
+            <label for="p3-Radio">Good</label>
+          </div>
+
+          <div class="label-p3-execllent">
+            <label for="p3-Radio">Execllent</label>
+          </div>
+
+          <!-- -----------------------------------questionSeven------------------------------------------------------- -->
+          <div class="questionSeven">
+            <p>7-Helps employees with their work problems</p>
+          </div>
+          <div class="questionSeven-radio-poor">
+              <input type="radio" id="poor" name="Q7-Radio" value="poor" required />
+          </div>
+          <div class="questionSeven-radio-good">
+              <input type="radio" id="good" name="Q7-Radio" value="good" required />
+          </div>
+          <div class="questionSeven-radio-execllent">
+             
+            <input type="radio" id="execllent" name="Q7-Radio" value="execllent" required />
+          </div>
+          <!-- -----------------------------------questionEight------------------------------------------------------- -->
+
+
+          <div class="questionEight">
+            <p>8-maintains work ethics during duty hours</p>
+          </div>
+          <div class="questionEight-radio-poor">
+              <input type="radio" id="poor" name="Q8-Radio" value="poor" required />
+          </div>
+          <div class="questionEight-radio-good">
+              <input type="radio" id="good" name="Q8-Radio" value="good" required />
+          </div>
+          <div class="questionEight-radio-execllent">
+             
+            <input type="radio" id="execllent" name="Q8-Radio" value="execllent" required />
+          </div>
+          <!-- -----------------------------------questionNine------------------------------------------------------- -->
+          <div class="questionNine">
+            <p>9-Arrives on time for scheduled work Message</p>
+          </div>
+          <div class="questionNine-radio-poor">
+              <input type="radio" id="poor" name="Q9-Radio" value="poor" required />
+          </div>
+          <div class="questionNine-radio-good">
+              <input type="radio" id="good" name="Q9-Radio" value="good" required />
+          </div>
+          <div class="questionNine-radio-execllent">
+             
+            <input type="radio" id="execllent" name="Q9-Radio" value="execllent" required />
+          </div>
+          <!-- -----------------------------------questionNine------------------------------------------------------- -->
+          <div class="btn-submit">
+            <div class="btn-container"><button type="submit" value="Submit" id="btn-sub">Submit</button></div>
+          </div>
+      </form>
+    </div>
+
+
+    </div>
+    </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="java.js"></script>
+
+</body>
+
+</html>
